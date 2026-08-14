@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 /* NAVIGATION */
 
 nav {
@@ -151,4 +155,114 @@ nav {
   font-weight: bold;
   transition: all 300ms ease;
   cursor: pointer;
+}
+
+header .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__description {
+  width: 40%;
+}
+
+.header__description--para {
+  margin: 32px 0;
+}
+
+.header__email {
+  width: 100%;
+  max-width: 440px;
+  height: 68px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__email--input {
+  width: 100%;
+  border-radius: 500px;
+  border: 2px solid rgb(229, 231, 235);
+  padding: 20px 192px 20px 32px;
+  color: rgb(36, 62, 99);
+  font-size: 16px;
+  font-weight: 500;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  transition: border-color 300ms;
+}
+
+.header__email--btn {
+  z-index: 2;
+  margin: 8px;
+  border-radius: 500px;
+  background-color: #6415ff;
+  color: white;
+  height: calc(100% - 16px);
+  width: 160px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 300ms ease;
+}
+
+.header__email--input::placeholder {
+  font-weight: 500;
+  color: rgb(158, 170, 189);  
+}
+
+.header__email--input:hover {
+  border-color: rgba(80, 17, 204);
+}
+
+.header__email--input:focus,
+.header__email--input:active {
+  outline: none;
+  border-color: rgba(100, 21, 255);
+}
+
+.header__email--btn:hover {
+   background-color: rgba(80, 17, 204);
+  color: white;
+}
+
+.header__customers--title {
+  margin-top: 80px;
+  color: #a0aec0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6;
+}
+
+.header__customers {
+  margin-top: 16px;
+  padding-right: 128px;
+  opacity: 0.5;
+
+}
+
+.header__img--wrapper {
+  width: calc(100% - 40%);
+}
+
+.header__img {
+  width: 100%;
+  max-width: 768px;
+}
+
+header {
+  position: relative;
+}
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+  .header__description--para {
+    font-size: 16px;
+  }
 }
