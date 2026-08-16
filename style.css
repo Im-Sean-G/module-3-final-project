@@ -12,6 +12,10 @@ body {
   max-width: 100vw;
 }
 
+section {
+  padding: 0 32px;
+}
+
 #landing {
   padding: 0 32px;
 }
@@ -368,7 +372,6 @@ QUALITY WORK
 
 #quality .row {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -377,7 +380,7 @@ QUALITY WORK
   line-height: 1.25;
 }
 
-#quality .button {
+#quality .btn {
   margin-top: 32px;
 }
 
@@ -401,10 +404,148 @@ QUALITY WORK
 
 /* 
 
-RESPONSIVENESS 
+STEPS
 
 */
 
+#steps .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.steps__description .steps__img {
+  width: 50%;
+}
+
+.steps__img--wrapper {
+  display: flex;
+  position: relative;
+}
+
+.steps__description {
+  padding: 32px 0 32px 64px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+
+.step__number {
+  font-size: 36px;
+  font-weight: 600;
+  color: #cbd5e0;
+  line-height: 1;
+}
+
+.step__description {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin-left: 24px;
+}
+
+.step__title {
+  color: #243e63;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 20px;
+}
+
+.step__description--para {
+  margin-top: 12px;
+}
+
+/* 
+
+VALUE 
+
+*/
+
+#values .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.values__description .values__img {
+  width: 50%;
+  padding: 32px 64px 32px 0;
+}
+
+.values__list {
+  margin: 24px 0 0 0;
+  max-width: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.value {
+  margin-right: 2rem;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.value__title {
+  display: flex;
+  align-items: center;
+}
+
+.value__name {
+  margin-left: 12px;
+  color: #243e63;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.value__para {
+  color: #718096;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+.value__img--wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+  background-color: #9ae6b4;
+}
+
+.value:nth-child(2) .value__img--wrapper {
+  background-color: #feb2b2;
+}
+
+.value__img {
+  width: 20px;
+  height: 20px;
+}
+
+#values .btn {
+  margin-top: 48px;
+}
+
+/* 
+
+PRICING 
+
+*/
+
+
+
+/* 
+
+RESPONSIVENESS 
+
+*/
 
 @media (max-width: 1280px) {
   h1 {
