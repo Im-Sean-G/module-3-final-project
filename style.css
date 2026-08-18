@@ -50,7 +50,7 @@ p {
   line-height: 1.5;
 }
 
-.btn {
+.btn, button {
   cursor: pointer;
 }
 
@@ -556,7 +556,140 @@ PRICING
   max-width: 576px;
 }
 
+.plans {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
 
+.plan {
+  position: relative;
+  margin-top: 4rem;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(255 255 255);
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 2rem;
+  padding-top: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.plan__top {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.plan__middle {
+  display: flex;
+  flex-direction: column;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: 2rem;
+}
+
+.plan__bottom {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.plan:nth-child(2n+1) .plan__middle {
+  border-top: 2px solid rgb(229, 231, 235);
+  border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+.plan:nth-child(2) .plan__middle {
+  border-top: 2px solid rgb(102, 126, 234);
+  border-bottom: 2px solid rgb(102, 126, 234);
+}
+
+.plan:nth-child(2n+1) .plan__name, 
+.plan:nth-child(2n+1) .plan__price, 
+.plan:nth-child(2n+1) .plan__duration {
+  font-weight: bold;
+  color: #1a202c;
+  line-height: 1.625;
+}
+
+.plan:nth-child(2) .plan__name, 
+.plan:nth-child(2) .plan__price, 
+.plan:nth-child(2) .plan__duration {
+  font-weight: bold;
+  color: #f7fafc;
+  line-height: 1.625;
+}
+
+.plan:nth-child(2) {
+  background-color: rgb(76, 81, 191) ;
+}
+
+.plan__name {
+  font-size: 20px;
+}
+
+.plan__price {
+  font-size: 48px;
+  margin: 4px 0;
+}
+
+.plan__duration {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: #a0aec0;
+}
+
+.plan__target {
+  color: #1a202c;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+}
+
+.plan__feature {
+  margin-top: 20px;
+  color: #718096;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.plan:nth-child(2) .plan__target,
+.plan:nth-child(2) .plan__feature {
+  color: #f7fafc;
+}
+
+.plan:nth-child(1) .plan__button {
+  background-color: rgb(56, 178, 172);
+  color: #f7fafc;
+}
+
+.plan:nth-child(2) .plan__button {
+  background-color: #f7fafc;
+  color: #6415ff;
+}
+
+.plan:nth-child(3) .plan__button {
+  background-color: rgb(245, 101, 101);
+  color: #f7fafc;
+}
+
+.plan__button {
+padding: 0.75rem 2rem;
+border: none;
+border-radius: 9999px;
+font-weight: bold;
+letter-spacing: 0.05em;
+width: 100%;
+transition: all 300ms ease;
+}
 
 /* 
 
@@ -571,6 +704,10 @@ RESPONSIVENESS
   }
   .header__description--para {
     font-size: 16px;
+  }
+  .plan__bottom {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
