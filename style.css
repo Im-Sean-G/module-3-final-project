@@ -80,6 +80,8 @@ p {
   font-weight: 500;
   color: #7c8ba1;
   line-height: 1.625;
+  text-align: center;
+  max-width: 576px;
 }
 
 /* 
@@ -538,6 +540,21 @@ VALUE
 PRICING 
 
 */
+
+#pricing .section__tag {
+  text-align: center;
+}
+
+#pricing .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pricing .section__para {
+  text-align: center;
+  max-width: 576px;
+}
 
 
 
