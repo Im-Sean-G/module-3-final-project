@@ -715,23 +715,62 @@ TESTIMONIALS
   padding-left: 64px;
 }
 
-.testimonial__img {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
+#testimonials .section__title {
+  margin-bottom: 24px;
+  line-height: 1.25;
 }
 
+.testimonial {
+  margin-top: 40px;
+}
 
+.testimonial__rating {
+  color: #f6ad55;
+}
+
+.testimonial__title {
+  color: #4a5568;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.testimonial__para {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(74 85 104);
+}
 
 .testimonial__bottom {
   display: flex;
   flex-direction: space-between;
 }
 
+.testimonial__img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin: 12px;
+}
+
 .testimonial__profile {
   display: flex;
   flex-direction: space-between;
   align-items: center;
+}
+
+.testimonial__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4a5568
+}
+
+.testimonial__role {
+  color: #7c8ba1;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .testimonial__buttons {
