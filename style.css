@@ -80,7 +80,6 @@ p {
   font-weight: 500;
   color: #7c8ba1;
   line-height: 1.625;
-  text-align: center;
   max-width: 576px;
 }
 
@@ -689,6 +688,74 @@ font-weight: bold;
 letter-spacing: 0.05em;
 width: 100%;
 transition: all 300ms ease;
+}
+
+/* 
+
+TESTIMONIALS
+
+*/
+
+#testimonials .row {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: space-between;
+  align-items: center;
+}
+
+.testimonials__img {
+  width: 50%;
+  padding: 24px;
+}
+
+.testimonials__description {
+  width:  50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+}
+
+.testimonial__img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+
+
+.testimonial__bottom {
+  display: flex;
+  flex-direction: space-between;
+}
+
+.testimonial__profile {
+  display: flex;
+  flex-direction: space-between;
+  align-items: center;
+}
+
+.testimonial__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  width: 5px;
+  height: 20px;
+}
+
+.testimonial__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px;
+  padding: 16px;
+  border-radius: 50%;
+  border: none;
+  background: #edf2f7;
+
 }
 
 /* 
