@@ -449,6 +449,16 @@
         const m = document.getElementById('mobileMenu');
         if (m) m.setAttribute('aria-hidden', 'true');
       }
+      // Close mobile menu when viewport is resized above the mobile breakpoint
+      function checkResizeCloseMenu() {
+        if (window.innerWidth > 1024) {
+          closeMenu();
+        }
+      }
+
+      window.addEventListener('resize', checkResizeCloseMenu);
+      window.addEventListener('orientationchange', checkResizeCloseMenu);
+      document.addEventListener('DOMContentLoaded', checkResizeCloseMenu);
     </script>
 </body>
 </html>
