@@ -17,20 +17,27 @@
           <div class="nav__logo--title">Treact</div>
         </div>
         <div class="nav__links--list">
-          <li class="nav__link"><a href="#">About</a></li>
-          <li class="nav__link"><a href="#">Blog</a></li>
-          <li class="nav__link"><a href="#">Pricing</a></li>
-          <li class="nav__link"><a href="#">Contact Us</a></li>
-          <li class="nav__link login"><a href="#">Login</a></li>
-          <li class="nav__link nav__link--primary"><a href="#">Sign Up</a></li>
+          <li class="nav__link"><a href="#about">About</a></li>
+          <li class="nav__link"><a href="#blog">Blog</a></li>
+          <li class="nav__link"><a href="#pricing">Pricing</a></li>
+          <li class="nav__link"><a href="#contact__us">Contact Us</a></li>
+          <li class="nav__link login"><a href="#login">Login</a></li>
+          <li class="nav__link nav__link--primary"><a href="#signup">Sign Up</a></li>
         </div>
+        <button class="btn__menu" aria-label="Open menu" onclick="openMenu()">☰</button>
       </div>
     </nav>
-    <!-- <div class="menu">
-      <button class="btn__menu btn__menu--close">
-        <i class=""
-      </button>
-    </div> -->
+    <div class="menu" id="mobileMenu" aria-hidden="true">
+      <div class="menu__content">
+        <button class="btn__menu btn__menu--close" aria-label="Close menu" onclick="closeMenu()">✕</button>
+        <a class="menu__link" href="#about" onclick="closeMenu()">About</a>
+        <a class="menu__link" href="#blog" onclick="closeMenu()">Blog</a>
+        <a class="menu__link" href="#pricing" onclick="closeMenu()">Pricing</a>
+        <a class="menu__link" href="#contact__us" onclick="closeMenu()">Contact Us</a>
+        <a class="menu__link" href="#login" onclick="closeMenu()">Login</a>
+        <a class="menu__link menu__link--primary" href="#signup" onclick="closeMenu()">Sign Up</a>
+      </div>
+    </div>
     <header>
       <div class="container">
         <div class="row">
@@ -431,5 +438,17 @@
       </div>
     </div>
   </footer>
+    <script>
+      function openMenu() {
+        document.body.classList.add('menu--open');
+        const m = document.getElementById('mobileMenu');
+        if (m) m.setAttribute('aria-hidden', 'false');
+      }
+      function closeMenu() {
+        document.body.classList.remove('menu--open');
+        const m = document.getElementById('mobileMenu');
+        if (m) m.setAttribute('aria-hidden', 'true');
+      }
+    </script>
 </body>
 </html>
