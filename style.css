@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   font-family: "Inter", sans-serif;
@@ -58,7 +58,8 @@ p {
   line-height: 1.5;
 }
 
-.btn, button {
+.btn,
+button {
   cursor: pointer;
 }
 
@@ -66,7 +67,7 @@ p {
   padding: 96px 0;
 }
 
-.section__tag{
+.section__tag {
   color: #6415ff;
   font-size: 16px;
   letter-spacing: 1.6px;
@@ -160,7 +161,7 @@ nav {
 }
 
 .btn__menu:focus {
-  outline: 2px solid rgba(100,21,255,0.2);
+  outline: 2px solid rgba(100, 21, 255, 0.2);
 }
 
 .nav__links--list {
@@ -218,7 +219,6 @@ nav {
 .menu--open .menu {
   visibility: visible;
   opacity: 1;
-  
 }
 
 .menu__links {
@@ -238,7 +238,7 @@ nav {
   width: 100%;
   max-width: 360px;
   background: #fff;
-  box-shadow: -8px 0 24px rgba(16,24,40,0.08);
+  box-shadow: -8px 0 24px rgba(16, 24, 40, 0.08);
   visibility: hidden;
   opacity: 0;
   transform: translateX(8px);
@@ -358,7 +358,7 @@ header .row {
 
 .header__email--input::placeholder {
   font-weight: 500;
-  color: rgb(158, 170, 189);  
+  color: rgb(158, 170, 189);
 }
 
 .header__email--input:hover {
@@ -372,7 +372,7 @@ header .row {
 }
 
 .header__email--btn:hover {
-   background-color: rgba(80, 17, 204);
+  background-color: rgba(80, 17, 204);
   color: white;
 }
 
@@ -494,8 +494,7 @@ QUALITY WORK
   margin-top: 32px;
 }
 
-.quality__description
-.quality__img--wrapper {
+.quality__description .quality__img--wrapper {
   width: 50%;
 }
 
@@ -683,7 +682,11 @@ PRICING
   border-radius: 8px;
   margin-right: 2rem;
   padding-top: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .plan__top {
@@ -708,7 +711,7 @@ PRICING
   padding-right: 4rem;
 }
 
-.plan:nth-child(2n+1) .plan__middle {
+.plan:nth-child(2n + 1) .plan__middle {
   border-top: 2px solid rgb(229, 231, 235);
   border-bottom: 2px solid rgb(229, 231, 235);
 }
@@ -718,16 +721,16 @@ PRICING
   border-bottom: 2px solid rgb(102, 126, 234);
 }
 
-.plan:nth-child(2n+1) .plan__name, 
-.plan:nth-child(2n+1) .plan__price, 
-.plan:nth-child(2n+1) .plan__duration {
+.plan:nth-child(2n + 1) .plan__name,
+.plan:nth-child(2n + 1) .plan__price,
+.plan:nth-child(2n + 1) .plan__duration {
   font-weight: bold;
   color: #1a202c;
   line-height: 1.625;
 }
 
-.plan:nth-child(2) .plan__name, 
-.plan:nth-child(2) .plan__price, 
+.plan:nth-child(2) .plan__name,
+.plan:nth-child(2) .plan__price,
 .plan:nth-child(2) .plan__duration {
   font-weight: bold;
   color: #f7fafc;
@@ -735,7 +738,7 @@ PRICING
 }
 
 .plan:nth-child(2) {
-  background-color: rgb(76, 81, 191) ;
+  background-color: rgb(76, 81, 191);
 }
 
 .plan__name {
@@ -790,13 +793,13 @@ PRICING
 }
 
 .plan__button {
-padding: 0.75rem 2rem;
-border: none;
-border-radius: 9999px;
-font-weight: bold;
-letter-spacing: 0.05em;
-width: 100%;
-transition: all 300ms ease;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 9999px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  width: 100%;
+  transition: all 300ms ease;
 }
 
 /* 
@@ -818,7 +821,7 @@ TESTIMONIALS
 }
 
 .testimonials__description {
-  width:  50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -873,7 +876,7 @@ TESTIMONIALS
 .testimonial__name {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #4a5568
+  color: #4a5568;
 }
 
 .testimonial__role {
@@ -908,7 +911,6 @@ TESTIMONIALS
   border-radius: 50%;
   border: none;
   background: #edf2f7;
-
 }
 
 /* 
@@ -978,7 +980,7 @@ START BOX
 }
 
 .start__button:nth-child(1):hover {
-background-color: rgba(229, 62, 62);
+  background-color: rgba(229, 62, 62);
 }
 
 .start__button:nth-child(2) {
@@ -1052,7 +1054,7 @@ FOOTER
   width: 100%;
   height: 2px;
   margin: 64px 0;
-  background: rgb(116, 44, 255)
+  background: rgb(116, 44, 255);
 }
 
 .footer__bottom {
@@ -1138,4 +1140,3 @@ RESPONSIVENESS
     z-index: 2000;
   }
 }
-
