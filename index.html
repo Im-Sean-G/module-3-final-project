@@ -17,25 +17,36 @@
           <div class="nav__logo--title">Treact</div>
         </div>
         <div class="nav__links--list">
-          <li class="nav__link"><a href="#about">About</a></li>
-          <li class="nav__link"><a href="#blog">Blog</a></li>
-          <li class="nav__link"><a href="#pricing">Pricing</a></li>
-          <li class="nav__link"><a href="#contact__us">Contact Us</a></li>
-          <li class="nav__link login"><a href="#login">Login</a></li>
-          <li class="nav__link nav__link--primary"><a href="#signup">Sign Up</a></li>
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#blog">Blog</a>
+          <a class="nav__link" href="#pricing">Pricing</a>
+          <a class="nav__link" href="#contact__us">Contact Us</a>
+          <a class="nav__link login" href="#login">Login</a>
+          <a class="nav__link nav__link--primary" href="#signup">Sign Up</a>
         </div>
-        <button class="btn__menu" aria-label="Open menu" onclick="openMenu()">☰</button>
+        <button class="btn__menu" onclick="openMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </nav>
-    <div class="menu" id="mobileMenu" aria-hidden="true">
-      <div class="menu__content">
-        <button class="btn__menu btn__menu--close" aria-label="Close menu" onclick="closeMenu()">✕</button>
-        <a class="menu__link" href="#about" onclick="closeMenu()">About</a>
-        <a class="menu__link" href="#blog" onclick="closeMenu()">Blog</a>
-        <a class="menu__link" href="#pricing" onclick="closeMenu()">Pricing</a>
-        <a class="menu__link" href="#contact__us" onclick="closeMenu()">Contact Us</a>
-        <a class="menu__link" href="#login" onclick="closeMenu()">Login</a>
-        <a class="menu__link menu__link--primary" href="#signup" onclick="closeMenu()">Sign Up</a>
+    <div class="menu">
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="menu__links">
+        <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+        <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+        <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+        <a href="#contact__us" class="menu__link" onclick="closeMenu()">Contact Us</a>
+        <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+        <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign up</a>
       </div>
     </div>
     <header>
